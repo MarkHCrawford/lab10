@@ -1,26 +1,59 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
+
+
+/**************************/
+/* Mark Crawford          */
+/* CSC 350H               */
+/* Professor Tang         */
+/* Lab 10, Invoker script */
+/* 04/05/2024             */
+/**************************/
 
 public class Invoker : MonoBehaviour
 {
-    [SerializeField]
+    // Timer
     private TimerScript timer;
+    // Event object
+    private static MessageEvent newEvent;
+    
 
-
-    private Event newEvent;
-
+    // Create event instance
     private void Awake()
     {
+        // Instance of event
         if (newEvent == null)
-        {
-            newEvent = new Event();
-        }
-
+            newEvent = new MessageEvent();
+        
     }
 
+    // start timer
     private void Start()
     {
-        newEvent.AddListener();
+        timer = gameObject.AddComponent<TimerScript>();
+        timer.TimeCounter = 2;
+        timer.StartTimer();
     }
+
+
+    // Update timer and invoke event
+    private void Update()
+    {
+        if (timer.TimerComplete)
+        {
+            newEvent.Invoke();
+            timer.TimerReset();
+            timer.StartTimer();
+        }
+    }
+
+    
+    // Event listener
+    public void AddNoArgumentListener(UnityAction listener)
+    {
+        newEvent.AddListener(listener);
+    }
+
 }
