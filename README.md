@@ -19,5 +19,6 @@ Unity program that creates a custom event. "Check. Check. Checkity Check." is pr
 
 ___
 
-<br />
-[YouTube Demo](https://youtu.be/pLgJOOXvrOQ)
+<br /> 
+
+[ YouTube ](https://youtu.be/pLgJOOXvrOQ "Link to external site: YouTube")
