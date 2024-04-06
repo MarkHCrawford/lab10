@@ -1,7 +1,7 @@
-# Lab 10 
-CSC350H
-Professor Tang
-**Updated:** 04/05/2024 
+# Lab 10 <br /> 
+CSC350H <br />
+Professor Tang <br /> 
+**Updated:** 04/05/2024 <br /> 
 
 ___
 
