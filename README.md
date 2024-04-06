@@ -10,8 +10,8 @@ Unity program that creates a custom event. "Check. Check. Checkity Check." is pr
 
 
 
-[x] Create MessageEvent.cs 
-[x] Create Invoker.cs 
-[x] Create Listener.cs 
-[x] Attach TimerScript.cs 
-[x] Attach to main camera and print message to console using custom event 
+[x] Create MessageEvent.cs <br />
+[x] Create Invoker.cs  <br />
+[x] Create Listener.cs <br />
+[x] Attach TimerScript.cs  <br />
+[x] Attach to main camera and print message to console using custom event <br /> 
